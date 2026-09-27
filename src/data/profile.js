@@ -22,12 +22,12 @@ export const capabilities = ["Land administration", "Property documentation", "D
 
 export const galleryPortraits = [
   { src: "/Mirian2.jpeg", title: "The Professional", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian1.jpeg", title: "Portrait 01", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian3.jpeg", title: "Portrait 03", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian4.jpeg", title: "Portrait 04", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian5.jpeg", title: "Portrait 05", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian6.jpeg", title: "Portrait 06", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian7.jpeg", title: "Portrait 07", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian8.JPG", title: "Portrait 08", note: "Mirian Okoro, Esq." },
-  { src: "/Mirian9.jpeg", title: "Portrait 09", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian1.jpeg", title: "01", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian3.jpeg", title: "03", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian4.jpeg", title: "04", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian5.jpeg", title: "05", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian6.jpeg", title: "06", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian7.jpeg", title: "07", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian8.JPG", title: "08", note: "Mirian Okoro, Esq." },
+  { src: "/Mirian9.jpeg", title: "09", note: "Mirian Okoro, Esq." },
 ];
