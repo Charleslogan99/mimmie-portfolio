@@ -1,65 +1,69 @@
 import Image from "next/image";
+import { SiteNavigation } from "@/components/layout/SiteNavigation";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { Arrow } from "@/components/ui/Arrow";
+import { RevealObserver } from "@/components/ui/RevealObserver";
+import { Gallery } from "@/components/ui/Gallery";
+import { capabilities, experience, focusAreas, galleryPortraits, profile } from "@/data/profile";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      <RevealObserver />
+      <SiteNavigation />
+      <section className="hero" id="top">
+        <div className="hero-grain" />
+        <div className="hero-copy">
+          <p className="eyebrow hero-in one"><span /> Lawyer · Real Estate Consultant</p>
+          <h1 className="hero-in two">Mirian <span>Okoro, Esq.</span></h1>
+          <p className="hero-intro hero-in three">Legal precision. Property intelligence. A decade of building investor confidence in Enugu&apos;s real estate market.</p>
+          <a href="#about" className="text-link hero-in four">Explore her profile <Arrow /></a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="portrait-wrap hero-in image-in">
+          <div className="portrait-frame"><Image src="/Mirian2.jpeg" alt="Portrait of Mirian Okoro" fill priority sizes="(max-width: 900px) 100vw, 47vw" /><div className="portrait-shade" /></div>
+          <div className="experience-seal"><span className="seal-top">REAL ESTATE</span><strong>10<span className="plus">+</span></strong><span>YEARS EXPERIENCE</span></div>
         </div>
-      </main>
-    </div>
+        <div className="hero-meta hero-in four"><span>{profile.location}</span><span className="meta-line" /><span>Property · Law · Investment</span></div>
+        <div className="scroll-cue"><span /> Scroll to explore</div>
+      </section>
+
+      <section className="statement section-pad" id="about">
+        <p className="section-kicker" data-reveal>01 / Professional profile</p>
+        <div className="statement-grid">
+          <div data-reveal><h2>Making property<br />investment <em>safer.</em></h2><p className="pull-quote">“Reliable information creates confidence. Confidence creates investment.”</p></div>
+          <div className="statement-copy" data-reveal>
+            <p>Mirian Okoro is a Legal Practitioner and Real Estate Professional with over 10 years of experience in real estate and more than 11 years of legal and property-related experience.</p>
+            <p>Born and bred in Enugu State, she brings a practical understanding of its property market. Her legal background spans land transactions, agreements, due diligence, negotiation, documentation and property disputes.</p>
+            <p>Working with owners, buyers, sellers, developers and investors has shaped her mission: make property information accessible, protect investors and connect credible opportunities in Enugu with capital at home and abroad.</p>
+          </div>
+        </div>
+        <div className="credentials" data-reveal>
+          <div><strong>10<sup>+</sup></strong><span>Years in<br />real estate</span></div><div><strong>11<sup>+</sup></strong><span>Years legal &<br />property work</span></div><div><strong>LL.B</strong><span>Madonna University<br />Okija</span></div><div><strong>B.L</strong><span>Nigerian Law School<br />NBA member</span></div>
+        </div>
+      </section>
+
+      <section className="expertise section-pad" id="expertise">
+        <div className="section-head" data-reveal><div><p className="section-kicker">02 / Areas of focus</p><h2>One perspective.<br /><em>Three disciplines.</em></h2></div><p>Legal knowledge, local market intelligence and technology-led thinking come together in one integrated practice.</p></div>
+        <div className="expertise-list">{focusAreas.map((item) => <article className="expertise-card" key={item.title} data-reveal><span className="card-number">{item.number}</span><div className="card-icon" aria-hidden="true">{item.number === "01" ? "⌂" : item.number === "02" ? "§" : "↗"}</div><h3>{item.title}</h3><p>{item.text}</p><div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><Arrow diagonal /></article>)}</div>
+      </section>
+
+      <section className="experience section-pad" id="experience">
+        <div className="experience-heading" data-reveal><p className="section-kicker">03 / Professional experience</p><h2>Work grounded in<br /><em>real outcomes.</em></h2></div>
+        <div className="experience-list">{experience.map((item, index) => <article key={item.company} data-reveal><span>0{index + 1}</span><div><small>{item.type}</small><h3>{item.company}</h3></div><strong>{item.role}</strong><p>{item.description}</p></article>)}</div>
+      </section>
+
+      <section className="engis section-pad">
+        <div className="engis-card" data-reveal><p className="section-kicker">04 / Vision for Enugu</p><h2>Confidence is the foundation of <em>development.</em></h2><p>Mirian&apos;s contribution to ENGIS brings together legal knowledge, real estate experience, public engagement, diaspora relationships and technology-driven ideas—supporting government&apos;s statutory role while improving how verified opportunities reach serious investors.</p><div className="capability-cloud">{capabilities.map((item) => <span key={item}>{item}</span>)}</div></div>
+        <aside data-reveal><span className="aside-label">Public engagement</span><strong>Dream FM, Enugu</strong><p>Weekly real estate education on ownership, documentation, investment and fraud prevention.</p><span className="aside-label">The ambition</span><blockquote>Make Enugu one of Nigeria&apos;s easiest and safest places to invest in real estate.</blockquote></aside>
+      </section>
+      <section className="gallery section-pad" id="gallery">
+        <div className="gallery-heading" data-reveal>
+          <div><p className="section-kicker">05 / Gallery portraits</p><h2>Poise, purpose<br />and <em>presence.</em></h2></div>
+          <p>A visual portrait of the woman behind the work—grounded, considered and confidently at home in every room.</p>
+        </div>
+        <Gallery portraits={galleryPortraits} />
+      </section>
+      <SiteFooter />
+    </main>
   );
 }
