@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./theme.css";
 
 export const metadata = {
   title: "Mirian Okoro, Esq. | Lawyer & Real Estate Professional",
