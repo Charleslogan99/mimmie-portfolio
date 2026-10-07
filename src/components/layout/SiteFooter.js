@@ -38,9 +38,9 @@ export function SiteFooter() {
             <h2 className="font-serif text-4xl font-normal leading-[1.02] tracking-tight text-neutral-50 sm:text-5xl lg:text-6xl">
               Let&apos;s discuss your
               <br />
-              <em className="not-italic font-normal text-[#d9bb77]">
+              <p className="not-italic font-normal text-[#d9bb77]">
                 next transaction.
-              </em>
+              </p>
             </h2>
             <p className="mt-7 max-w-md text-sm leading-relaxed text-neutral-400">
               Based in Nigeria, with strong professional roots in Enugu and
@@ -167,9 +167,9 @@ export function SiteFooter() {
             >
               Book your
               <br />
-              <em className="not-italic font-normal text-[#d9bb77]">
+              <p className="not-italic font-normal text-[#d9bb77]">
                 consultation.
-              </em>
+              </p>
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-neutral-400">
               Choose the contact method that works best for you. Mirian&apos;s

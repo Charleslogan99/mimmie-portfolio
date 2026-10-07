@@ -3,7 +3,7 @@
 :root {
     --ink: #0b0b0a;
     --surface: #12110f;
-    --paper: #eee4d3;
+    --paper: #d9bb77;
     --muted: #ad9e89;
     --line: rgba(238, 228, 211, .17);
     --accent: #ba8b55;
@@ -118,6 +118,7 @@ footer em,
     border: 1px solid var(--line);
     border-radius: 100px;
     background: rgba(11, 11, 10, .8);
+    -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px)
 }
 
