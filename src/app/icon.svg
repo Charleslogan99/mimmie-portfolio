@@ -4,10 +4,10 @@
       <stop stop-color="#171015"/>
       <stop offset="1" stop-color="#050405"/>
     </linearGradient>
-    <linearGradient id="rose" x1="17" y1="15" x2="47" y2="50" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFE1EA"/>
-      <stop offset=".55" stop-color="#E8AFC2"/>
-      <stop offset="1" stop-color="#A55C75"/>
+    <linearGradient id="gold" x1="17" y1="15" x2="47" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7E1A2"/>
+      <stop offset=".55" stop-color="#D9BB77"/>
+      <stop offset="1" stop-color="#8F6B2C"/>
     </linearGradient>
   </defs>
 
@@ -15,17 +15,17 @@
   <path
     d="M17 49V29C17 20.7 23.7 14 32 14s15 6.7 15 15v20"
     fill="none"
-    stroke="url(#rose)"
+    stroke="url(#gold)"
     stroke-width="3"
     stroke-linecap="round"
   />
   <path
     d="M22 46V28l10 11 10-11v18"
     fill="none"
-    stroke="#F9CEDB"
+    stroke="#E6CB8A"
     stroke-width="3.5"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
-  <circle cx="32" cy="50" r="2.5" fill="#C37891"/>
+  <circle cx="32" cy="50" r="2.5" fill="#BA8B55"/>
 </svg>
