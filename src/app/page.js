@@ -5,17 +5,28 @@ import { Arrow } from "@/components/ui/Arrow";
 import { Gallery } from "@/components/ui/Gallery";
 import { RevealObserver } from "@/components/ui/RevealObserver";
 import {
+  agricultureFocus,
+  corporateEngagements,
   credentials,
   disciplines,
   galleryPortraits,
   insights,
   matters,
   practiceAreas,
+  socialProgrammes,
   ventures,
 } from "@/data/profile";
 
 const reveal =
   "opacity-0 translate-y-8 transition-all duration-700 ease-out [&.is-visible]:opacity-100 [&.is-visible]:translate-y-0";
+
+function HeroDivider() {
+  return (
+    <svg className="mx-2 inline-block h-2 w-2 align-[0.08em] text-[#c9a45c] sm:mx-3 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3" viewBox="0 0 12 12" aria-hidden="true">
+      <path d="M6 0 12 6 6 12 0 6Z" fill="currentColor" />
+    </svg>
+  );
+}
 
 export default function Home() {
   return (
@@ -38,8 +49,8 @@ export default function Home() {
               "radial-gradient(circle at 22% 30%, rgba(201,164,92,0.14), transparent 45%)",
           }}
         />
-        <div className="relative z-10 grid min-h-[100svh] grid-cols-1 lg:grid-cols-[56%_44%]">
-          <div className="relative z-10 flex flex-col justify-center px-6 pb-16 pt-28 sm:px-10 sm:pt-32 lg:px-16 lg:py-0 xl:px-24">
+        <div className="relative z-10 grid grid-cols-1 lg:min-h-[calc(100svh-64px)] lg:grid-cols-[minmax(0,1.08fr)_minmax(420px,0.92fr)] xl:min-h-[calc(100svh-72px)]">
+          <div className="relative z-10 flex flex-col justify-center px-6 pb-14 pt-32 sm:px-10 sm:pb-16 sm:pt-36 lg:px-16 lg:py-24 xl:px-24">
             <p
               data-reveal
               className={`flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-[#c9a45c] ${reveal}`}
@@ -48,35 +59,35 @@ export default function Home() {
             </p>
             <h1
               data-reveal
-              className={`mt-7 font-serif text-[13vw] font-normal leading-[0.88] tracking-tight text-neutral-50 delay-150 xs:text-6xl sm:text-7xl lg:text-6xl xl:text-8xl ${reveal}`}
+              className={`mt-7 flex max-w-[11ch] flex-wrap items-center gap-x-1 gap-y-1 font-serif text-[11vw] font-normal leading-[0.9] tracking-[-0.055em] text-neutral-50 delay-150 sm:max-w-none sm:gap-x-2 sm:text-7xl lg:gap-x-3 lg:text-[clamp(4rem,5.3vw,5.75rem)] xl:text-[clamp(4.8rem,5.4vw,6.5rem)] ${reveal}`}
             >
-              Law. Business.
-              <br />
-              <span className="italic text-[#d9bb77]">
-                Property. Agriculture.
-              </span>
+              <span className="whitespace-nowrap">Law<HeroDivider /></span>
+              <span className="whitespace-nowrap">Business<HeroDivider /></span>
+              <span className="whitespace-nowrap italic text-[#d9bb77]">Impact<HeroDivider /></span>
+              <span className="whitespace-nowrap italic text-[#d9bb77]">Property<HeroDivider /></span>
+              <span className="whitespace-nowrap">Agriculture</span>
             </h1>
             <p
               data-reveal
-              className={`mt-7 max-w-md text-sm leading-relaxed text-neutral-100/90 delay-300 sm:text-base ${reveal}`}
+              className={`mt-7 max-w-xl text-balance text-sm leading-relaxed text-neutral-100/90 delay-300 sm:text-base lg:max-w-lg ${reveal}`}
             >
               Legal Practitioner, Corporate &amp; Commercial Adviser, Real
-              Estate Professional &amp; Agribusiness Entrepreneur.
+              Estate Professional, Agribusiness Entrepreneur &amp; Social Advocate.
             </p>
             <p
               data-reveal
-              className={`mt-4 max-w-sm font-serif text-lg leading-snug text-neutral-400 delay-300 sm:text-xl ${reveal}`}
+              className={`mt-4 max-w-md text-balance font-serif text-lg leading-snug text-neutral-400 delay-300 sm:text-xl lg:text-[1.35rem] ${reveal}`}
             >
               Building, protecting and advising businesses, investments and
               property interests across Nigeria.
             </p>
             <div
               data-reveal
-              className={`mt-9 flex flex-wrap items-center gap-4 delay-500 ${reveal}`}
+              className={`mt-8 flex flex-col items-stretch gap-3 delay-500 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 ${reveal}`}
             >
               <a
                 href="#practice"
-                className="group inline-flex items-center gap-3 rounded-full border border-[#c9a45c] bg-[#c9a45c] px-7 py-3.5 text-[10px] font-semibold uppercase tracking-[0.15em] text-neutral-950 shadow-[0_10px_30px_-12px_rgba(201,164,92,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e0c17a] hover:shadow-[0_16px_40px_-14px_rgba(201,164,92,0.65)] active:translate-y-0"
+                className="group inline-flex items-center justify-center gap-3 rounded-full border border-[#c9a45c] bg-[#c9a45c] px-7 py-3.5 text-[10px] font-semibold uppercase tracking-[0.15em] text-neutral-950 shadow-[0_10px_30px_-12px_rgba(201,164,92,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e0c17a] hover:shadow-[0_16px_40px_-14px_rgba(201,164,92,0.65)] active:translate-y-0"
               >
                 Explore my practice
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -85,7 +96,7 @@ export default function Home() {
               </a>
               <a
                 href="#contact"
-                className="group inline-flex items-center gap-3 rounded-full border border-white/15 px-7 py-3.5 text-[10px] uppercase tracking-[0.15em] text-neutral-200 transition-all duration-300 hover:border-[#c9a45c]/70 hover:bg-[#c9a45c]/10 hover:text-[#e0c17a]"
+                className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/15 px-7 py-3.5 text-[10px] uppercase tracking-[0.15em] text-neutral-200 transition-all duration-300 hover:border-[#c9a45c]/70 hover:bg-[#c9a45c]/10 hover:text-[#e0c17a]"
               >
                 Start a conversation
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -97,7 +108,7 @@ export default function Home() {
 
           <div
             data-reveal
-            className="relative h-[340px] opacity-0 translate-x-8 transition-all duration-1000 ease-out [&.is-visible]:opacity-100 [&.is-visible]:translate-x-0 sm:h-[440px] lg:h-auto"
+            className="relative h-[min(92vw,390px)] min-h-[320px] opacity-0 translate-x-8 transition-all duration-1000 ease-out [&.is-visible]:opacity-100 [&.is-visible]:translate-x-0 sm:h-[500px] sm:min-h-0 lg:h-auto lg:min-h-[620px]"
           >
             <div className="absolute inset-0">
               <Image
@@ -106,12 +117,12 @@ export default function Home() {
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 44vw"
-                className="object-cover object-[center_18%] saturate-[0.78] contrast-105"
+                className="object-cover object-[center_15%] saturate-[0.78] contrast-105 lg:object-[center_18%]"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/10 to-transparent lg:from-neutral-950" />
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/30 via-transparent to-transparent lg:from-neutral-950 lg:via-neutral-950/15" />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
             </div>
-            <div className="absolute left-6 bottom-8 flex h-24 w-24 flex-col items-center justify-center rounded-full border border-[#c9a45c]/50 bg-neutral-950/70 text-center shadow-xl backdrop-blur-md sm:left-8 sm:bottom-12 sm:h-28 sm:w-28 lg:-left-12 lg:h-32 lg:w-32">
+            <div className="absolute bottom-6 left-5 flex h-24 w-24 flex-col items-center justify-center rounded-full border border-[#c9a45c]/50 bg-neutral-950/80 text-center shadow-xl backdrop-blur-md sm:bottom-10 sm:left-8 sm:h-28 sm:w-28 lg:-left-10 lg:bottom-12 lg:h-32 lg:w-32 xl:-left-14">
               <span className="absolute top-4 text-[6px] tracking-[0.15em] text-neutral-200 sm:top-5 sm:text-[7px]">
                 LAW · BUSINESS
               </span>
@@ -128,7 +139,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative z-10 flex flex-wrap items-center gap-4 px-6 pb-8 text-[8px] uppercase tracking-[0.2em] text-neutral-400 sm:px-10 lg:px-16 lg:pb-10 xl:px-24">
+        <div className="relative z-10 flex flex-wrap items-center gap-x-4 gap-y-2 px-6 pb-8 text-[8px] uppercase tracking-[0.2em] text-neutral-400 sm:px-10 lg:px-16 lg:pb-6 xl:px-24">
           <span>Nigeria · Enugu roots</span>
           <span className="h-px w-10 bg-white/15" />
           <span>Legal · Commercial · Advisory</span>
@@ -279,17 +290,27 @@ export default function Home() {
             </p>
           </div>
           <ul className="divide-y divide-white/10">
-            <li className="py-3 font-serif text-base text-neutral-200">
-              Basani Digital Innovations Limited
-            </li>
-            <li className="py-3 font-serif text-base text-neutral-200">
-              Peter Love Concept
-            </li>
-            <li className="py-3 font-serif text-base text-neutral-200">
-              Other privately held companies &amp; organisations
-            </li>
+            {corporateEngagements.map((engagement) => (
+              <li key={engagement} className="py-2 font-serif text-sm text-neutral-200">
+                {engagement}
+              </li>
+            ))}
           </ul>
         </aside>
+
+        <div className="mt-6 grid grid-cols-1 divide-y divide-white/10 border border-white/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+          <article className="p-7 sm:p-8">
+            <p className="text-[9px] uppercase tracking-[0.15em] text-[#c9a45c]">Legal practice</p>
+            <h3 className="mt-4 font-serif text-2xl font-normal text-neutral-50">M. Omah Solicitors</h3>
+            <p className="mt-2 text-xs leading-relaxed text-neutral-400">Founder &amp; Principal Solicitor. A Nigerian law firm focused on corporate and commercial matters, property and real estate law, contracts and related advisory services.</p>
+          </article>
+          <article className="p-7 sm:p-8">
+            <p className="text-[9px] uppercase tracking-[0.15em] text-[#c9a45c]">International experience</p>
+            <h3 className="mt-4 font-serif text-2xl font-normal text-neutral-50">Law Office of O. I. Hopes · United States</h3>
+            <p className="mt-2 text-xs leading-relaxed text-neutral-400">Part-Time Case Manager, supporting a US-based law firm without representing a US legal-practice role.</p>
+          </article>
+        </div>
+        <p className="mt-4 text-[10px] leading-relaxed text-neutral-500">Selected professional engagements are presented subject to applicable confidentiality and client-consent requirements.</p>
       </section>
 
       <section
@@ -350,6 +371,20 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-[#100f0d] px-6 py-20 text-neutral-100 sm:px-10 sm:py-28 lg:px-16 lg:py-32 xl:px-24">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 xl:gap-28">
+          <div data-reveal className={reveal}>
+            <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#c9a45c]">Agriculture &amp; agribusiness</p>
+            <h2 className="mt-7 font-serif text-4xl font-normal leading-[1.02] tracking-tight text-neutral-50 sm:text-5xl lg:text-6xl">Building the<br /><em className="not-italic font-normal text-[#d9bb77]">castor value chain.</em></h2>
+            <p className="mt-7 max-w-md text-sm leading-relaxed text-neutral-400">Mirian&apos;s agricultural focus extends from castor bean production and farmer partnerships to local processing and stronger routes to market for African producers.</p>
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-neutral-400">Through CastorConnect Africa, this work helps link farmers, outgrower programmes, production, processing and global-market opportunities.</p>
+          </div>
+          <div data-reveal className={`grid grid-cols-1 divide-y divide-white/10 border-y border-white/10 sm:grid-cols-2 sm:divide-x ${reveal}`}>
+            {agricultureFocus.map(([title, text], index) => <article key={title} className="min-h-[180px] p-6 sm:p-8"><span className="text-[9px] text-[#c9a45c]">0{index + 1}</span><h3 className="mt-8 font-serif text-xl font-normal text-neutral-50">{title}</h3><p className="mt-3 text-xs leading-relaxed text-neutral-400">{text}</p></article>)}
+          </div>
         </div>
       </section>
 
@@ -437,6 +472,7 @@ export default function Home() {
               <strong className="mt-3 block text-[8px] uppercase tracking-[0.15em] text-neutral-400 sm:mt-0 sm:pt-1">
                 Director
               </strong>
+              <p className="col-start-2 mt-3 text-xs leading-relaxed text-neutral-400 sm:mt-1">Youth advocacy and initiatives supporting rehabilitation, development, skills and better opportunities for young people.</p>
             </article>
             <article className="py-7 sm:py-8 sm:grid sm:grid-cols-[42px_1fr_auto] sm:items-start sm:gap-6">
               <span className="text-[9px] text-[#c9a45c] sm:pt-1">02</span>
@@ -446,8 +482,12 @@ export default function Home() {
               <strong className="mt-3 block text-[8px] uppercase tracking-[0.15em] text-neutral-400 sm:mt-0 sm:pt-1">
                 Founder &amp; Trustee
               </strong>
+              <p className="col-start-2 mt-3 text-xs leading-relaxed text-neutral-400 sm:mt-1">Advocacy for the rights, welfare and development of African women and children.</p>
             </article>
           </div>
+        </div>
+        <div className="mt-14 grid grid-cols-1 divide-y divide-white/10 border border-white/10 sm:mt-16 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-3">
+          {socialProgrammes.map(([title, text]) => <article key={title} className="min-h-[150px] p-6 sm:p-7"><h3 className="font-serif text-xl font-normal text-neutral-50">{title}</h3><p className="mt-3 text-xs leading-relaxed text-neutral-400">{text}</p></article>)}
         </div>
       </section>
 

@@ -26,9 +26,36 @@ export const practiceAreas = [
 ];
 
 export const ventures = [
-  { category: "Real estate & investment", items: [{ company: "AYRI–Grace Estates Limited", role: "Director", description: "Real estate development and credible property opportunities for owners and investors." }, { company: "Shard Developers Limited", role: "Director", description: "Technology-led ideas connecting verified property opportunities with investors." }] },
-  { category: "Agriculture & agribusiness", items: [{ company: "Sôlt Africana Limited", role: "Director", description: "Project development, business operations and land-based initiatives." }, { company: "OMANNES Agro Services", role: "Director", description: "Agricultural and agribusiness interests." }] },
+  { category: "Real estate & investment", items: [{ company: "AYRI–Grace Estates Limited", role: "Director", description: "Real estate development and property investment." }, { company: "Shard Developers Limited", role: "Director", description: "Property development and investment." }] },
+  { category: "Agriculture & agribusiness", items: [{ company: "Sôlt Africana Limited", role: "Director · Nigeria", description: "Agricultural business focused on castor value-chain opportunities and local and international markets." }, { company: "Sôlt Africana Farms (Pty) Limited", role: "Director · South Africa", description: "Agricultural operations supporting the wider Sôlt Africana focus." }, { company: "CastorConnect Africa Limited", role: "Director", description: "Connecting African castor farmers, production programmes and global market opportunities." }, { company: "OMANNES Agro Services", role: "Director", description: "Agricultural production and opportunities within the castor value chain." }] },
   { category: "Media, information & development", items: [{ company: "AGRICCORP Limited", role: "Director", description: "Agric Information Center and Community Radio Project." }] },
+];
+
+export const corporateEngagements = [
+  "Basani Digital Innovations Ltd.",
+  "Peter Love Concept",
+  "ECOTRA LLC · United States",
+  "Giovanni Multilinks",
+  "Twist Hotel & Lounge Night Life Entertainment Ltd.",
+  "Ekedi & Flying Investments Limited",
+  "Sullivan Douglas Properties Ltd.",
+  "Other privately held companies & organisations",
+];
+
+export const agricultureFocus = [
+  ["Castor bean production", "Supporting organised production and farmer participation."],
+  ["Outgrower programmes", "Building reliable farmer partnerships and a stronger supply base."],
+  ["Castor oil processing", "Developing opportunities to process locally produced castor beans into oil."],
+  ["Global market access", "Connecting African producers with local and international markets."],
+];
+
+export const socialProgrammes = [
+  ["Medical outreach", "Community medical and health-support programmes."],
+  ["Capacity building", "Programmes designed to improve knowledge and abilities."],
+  ["Skills acquisition", "Practical training and livelihood-focused programmes."],
+  ["Rural development", "Projects supporting rural and underserved communities."],
+  ["Community radio", "Information programmes that educate and connect communities."],
+  ["Youth development", "Advocacy, engagement and development programmes for young people."],
 ];
 
 export const matters = [
