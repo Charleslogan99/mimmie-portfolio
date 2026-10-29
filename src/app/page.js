@@ -305,11 +305,11 @@ export default function Home() {
             <h3 className="mt-4 font-serif text-2xl font-normal text-neutral-50">M. Omah Solicitors</h3>
             <p className="mt-2 text-xs leading-relaxed text-neutral-400">Founder &amp; Principal Solicitor. A Nigerian law firm focused on corporate and commercial matters, property and real estate law, contracts and related advisory services.</p>
           </article>
-          <article className="p-7 sm:p-8">
+          {/* <article className="p-7 sm:p-8">
             <p className="text-[9px] uppercase tracking-[0.15em] text-[#c9a45c]">International experience</p>
             <h3 className="mt-4 font-serif text-2xl font-normal text-neutral-50">Law Office of O. I. Hopes · United States</h3>
             <p className="mt-2 text-xs leading-relaxed text-neutral-400">Part-Time Case Manager, supporting a US-based law firm without representing a US legal-practice role.</p>
-          </article>
+          </article> */}
         </div>
         <p className="mt-4 text-[10px] leading-relaxed text-neutral-500">Selected professional engagements are presented subject to applicable confidentiality and client-consent requirements.</p>
       </section>
