@@ -3,6 +3,7 @@ import { SiteNavigation } from "@/components/layout/SiteNavigation";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { Arrow } from "@/components/ui/Arrow";
 import { Gallery } from "@/components/ui/Gallery";
+import { InsightsGrid } from "@/components/ui/InsightsGrid";
 import { RevealObserver } from "@/components/ui/RevealObserver";
 import {
   agricultureFocus,
@@ -668,8 +669,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-7">
-          {insights.map((insight, index) => (
+        <InsightsGrid insights={insights.filter((insight) => insight.article)} />
+        <div className="mt-5 grid grid-cols-1 gap-5 sm:mt-6 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-7">
+          {insights.filter((insight) => !insight.article).map((insight, index) => (
             <article
               data-reveal
               key={insight.title}
