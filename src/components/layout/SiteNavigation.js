@@ -5,7 +5,7 @@ const links = [
   ["01", "About", "about"],
   ["02", "Practice", "practice"],
   ["03", "Ventures", "ventures"],
-  ["04", "Impact", "impact"],
+  ["04", "Social Impact", "social impact"],
   ["05", "Insights", "insights"],
   ["06", "Contact", "contact"],
 ];
