@@ -439,7 +439,7 @@ export const profile = {
 export const credentials = [
   { value: "LL.B", label: "Madonna University, Okija" },
   { value: "B.L", label: "Nigerian Law School" },
-  { value: "DRS", label: "The Issuing Body Is Dispute Resolution Associates Limited (DRAL)" },
+  { value: "DRS", label: "Dispute Resolution Associates Limited (DRAL)" },
   { value: "10+", label: "Years across law, business & property" },
 ];
 
