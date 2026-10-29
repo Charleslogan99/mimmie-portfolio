@@ -381,7 +381,7 @@ export default function Home() {
             <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#c9a45c]">Agriculture &amp; agribusiness</p>
             <h2 className="mt-7 font-serif text-4xl font-normal leading-[1.02] tracking-tight text-neutral-50 sm:text-5xl lg:text-6xl">Building the<br /><em className="not-italic font-normal text-[#d9bb77]">castor value chain.</em></h2>
             <p className="mt-7 max-w-md text-sm leading-relaxed text-neutral-400">Mirian&apos;s agricultural focus extends from castor bean production and farmer partnerships to local processing and stronger routes to market for African producers.</p>
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-neutral-400">Through CastorConnect Africa, this work helps link farmers, outgrower programmes, production, processing and global-market opportunities.</p>
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-neutral-400">Through Sôlt Africana Limited and CastorConnect Africa, this work helps link farmers, outgrower programmes, production, processing and global-market opportunities.</p>
           </div>
           <div data-reveal className={`grid grid-cols-1 divide-y divide-white/10 border-y border-white/10 sm:grid-cols-2 sm:divide-x ${reveal}`}>
             {agricultureFocus.map(([title, text], index) => <article key={title} className="min-h-[180px] p-6 sm:p-8"><span className="text-[9px] text-[#c9a45c]">0{index + 1}</span><h3 className="mt-8 font-serif text-xl font-normal text-neutral-50">{title}</h3><p className="mt-3 text-xs leading-relaxed text-neutral-400">{text}</p></article>)}

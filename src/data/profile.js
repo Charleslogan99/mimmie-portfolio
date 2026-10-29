@@ -560,14 +560,14 @@ export const ventures = [
 ];
 
 export const corporateEngagements = [
-  "Basani Digital Innovations Ltd.",
-  "Peter Love Concept",
   "ECOTRA LLC · United States",
+  "Basani Digital Innovations Ltd.",
   "Giovanni Multilinks",
   "Twist Hotel & Lounge Night Life Entertainment Ltd.",
   "Ekedi & Flying Investments Limited",
   "Sullivan Douglas Properties Ltd.",
   "Other privately held companies & organisations",
+  "Peter Love Concept",
 ];
 
 export const agricultureFocus = [
@@ -1698,8 +1698,8 @@ export const insights = [
 ];
 
 export const galleryPortraits = [
-  { src: "/Mirian2.jpeg", title: "01", note: "Legal & business practice" },
   { src: "/Mirian1.jpeg", title: "02", note: "Corporate advisory" },
+  { src: "/Mirian2.jpeg", title: "01", note: "Legal & business practice" },
   { src: "/Mirian7.jpeg", title: "03", note: "Property & investment" },
   { src: "/Mirian8.JPG", title: "04", note: "Beyond the desk" },
 ];
