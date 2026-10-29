@@ -23,7 +23,11 @@ const reveal =
 
 function HeroDivider() {
   return (
-    <svg className="mx-2 inline-block h-2 w-2 align-[0.08em] text-[#c9a45c] sm:mx-3 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3" viewBox="0 0 12 12" aria-hidden="true">
+    <svg
+      className="mx-2 inline-block h-2 w-2 align-[0.08em] text-[#c9a45c] sm:mx-3 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3"
+      viewBox="0 0 12 12"
+      aria-hidden="true"
+    >
       <path d="M6 0 12 6 6 12 0 6Z" fill="currentColor" />
     </svg>
   );
@@ -62,10 +66,22 @@ export default function Home() {
               data-reveal
               className={`mt-7 flex max-w-[11ch] flex-wrap items-center gap-x-1 gap-y-1 font-serif text-[11vw] font-normal leading-[0.9] tracking-[-0.055em] text-neutral-50 delay-150 sm:max-w-none sm:gap-x-2 sm:text-7xl lg:gap-x-3 lg:text-[clamp(4rem,5.3vw,5.75rem)] xl:text-[clamp(4.8rem,5.4vw,6.5rem)] ${reveal}`}
             >
-              <span className="whitespace-nowrap">Law<HeroDivider /></span>
-              <span className="whitespace-nowrap">Business<HeroDivider /></span>
-              <span className="whitespace-nowrap italic text-[#d9bb77]">Impact<HeroDivider /></span>
-              <span className="whitespace-nowrap italic text-[#d9bb77]">Property<HeroDivider /></span>
+              <span className="whitespace-nowrap">
+                Law
+                <HeroDivider />
+              </span>
+              <span className="whitespace-nowrap">
+                Business
+                <HeroDivider />
+              </span>
+              <span className="whitespace-nowrap italic text-[#d9bb77]">
+                Impact
+                <HeroDivider />
+              </span>
+              <span className="whitespace-nowrap italic text-[#d9bb77]">
+                Property
+                <HeroDivider />
+              </span>
               <span className="whitespace-nowrap">Agriculture</span>
             </h1>
             <p
@@ -73,7 +89,8 @@ export default function Home() {
               className={`mt-7 max-w-xl text-balance text-sm leading-relaxed text-neutral-100/90 delay-300 sm:text-base lg:max-w-lg ${reveal}`}
             >
               Legal Practitioner, Corporate &amp; Commercial Adviser, Real
-              Estate Professional, Agribusiness Entrepreneur &amp; Social Advocate.
+              Estate Professional, Agribusiness Entrepreneur &amp; Social
+              Advocate.
             </p>
             <p
               data-reveal
@@ -292,7 +309,10 @@ export default function Home() {
           </div>
           <ul className="divide-y divide-white/10">
             {corporateEngagements.map((engagement) => (
-              <li key={engagement} className="py-2 font-serif text-sm text-neutral-200">
+              <li
+                key={engagement}
+                className="py-2 font-serif text-sm text-neutral-200"
+              >
                 {engagement}
               </li>
             ))}
@@ -301,9 +321,17 @@ export default function Home() {
 
         <div className="mt-6 grid grid-cols-1 divide-y divide-white/10 border border-white/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
           <article className="p-7 sm:p-8">
-            <p className="text-[9px] uppercase tracking-[0.15em] text-[#c9a45c]">Legal practice</p>
-            <h3 className="mt-4 font-serif text-2xl font-normal text-neutral-50">M. Omah Solicitors</h3>
-            <p className="mt-2 text-xs leading-relaxed text-neutral-400">Founder &amp; Principal Solicitor. A Nigerian law firm focused on corporate and commercial matters, property and real estate law, contracts and related advisory services.</p>
+            <p className="text-[9px] uppercase tracking-[0.15em] text-[#c9a45c]">
+              Legal practice
+            </p>
+            <h3 className="mt-4 font-serif text-2xl font-normal text-neutral-50">
+              M. Omah Solicitors
+            </h3>
+            <p className="mt-2 text-xs leading-relaxed text-neutral-400">
+              Founder &amp; Principal Solicitor. A Nigerian law firm focused on
+              corporate and commercial matters, property and real estate law,
+              contracts and related advisory services.
+            </p>
           </article>
           {/* <article className="p-7 sm:p-8">
             <p className="text-[9px] uppercase tracking-[0.15em] text-[#c9a45c]">International experience</p>
@@ -311,7 +339,10 @@ export default function Home() {
             <p className="mt-2 text-xs leading-relaxed text-neutral-400">Part-Time Case Manager, supporting a US-based law firm without representing a US legal-practice role.</p>
           </article> */}
         </div>
-        <p className="mt-4 text-[10px] leading-relaxed text-neutral-500">Selected professional engagements are presented subject to applicable confidentiality and client-consent requirements.</p>
+        <p className="mt-4 text-[10px] leading-relaxed text-neutral-500">
+          Selected professional engagements are presented subject to applicable
+          confidentiality and client-consent requirements.
+        </p>
       </section>
 
       <section
@@ -326,6 +357,7 @@ export default function Home() {
             <p className="mb-6 text-[10px] font-medium uppercase tracking-[0.3em] text-[#8f6b2c] sm:mb-8">
               03 / Ventures &amp; leadership
             </p>
+
             <h2 className="font-serif text-4xl font-normal leading-[1.02] tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
               Built from the
               <br />
@@ -334,6 +366,7 @@ export default function Home() {
               </em>
             </h2>
           </div>
+
           <p className="text-sm leading-relaxed text-neutral-900/60">
             Direct involvement in ventures gives Mirian an informed perspective
             on how businesses are built, operated and advised.
@@ -350,6 +383,7 @@ export default function Home() {
               <p className="text-[8px] uppercase tracking-[0.2em] text-[#8f6b2c]">
                 {group.category}
               </p>
+
               <div className="divide-y divide-neutral-900/10">
                 {group.items.map((item) => (
                   <article
@@ -358,12 +392,32 @@ export default function Home() {
                   >
                     <div>
                       <h3 className="font-serif text-xl font-normal leading-tight text-neutral-900 sm:text-2xl">
-                        {item.company}
+                        {item.website ? (
+                          <a
+                            href={item.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Visit ${item.company} website (opens in a new tab)`}
+                            className="text-[#8f6b2c] transition-colors duration-300 hover:text-[#8f6b2c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8f6b2c] lg:text-neutral-900 lg:hover:text-[#8f6b2c]"
+                          >
+                            {item.company}
+                            <span
+                              aria-hidden="true"
+                              className="ml-2 inline-block text-xs align-middle"
+                            >
+                              ↗
+                            </span>
+                          </a>
+                        ) : (
+                          item.company
+                        )}
                       </h3>
+
                       <span className="text-[8px] uppercase tracking-[0.15em] text-neutral-900/50">
                         {item.role}
                       </span>
                     </div>
+
                     <p className="text-xs leading-relaxed text-neutral-900/60">
                       {item.description}
                     </p>
@@ -378,13 +432,42 @@ export default function Home() {
       <section className="bg-[#100f0d] px-6 py-20 text-neutral-100 sm:px-10 sm:py-28 lg:px-16 lg:py-32 xl:px-24">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 xl:gap-28">
           <div data-reveal className={reveal}>
-            <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#c9a45c]">Agriculture &amp; agribusiness</p>
-            <h2 className="mt-7 font-serif text-4xl font-normal leading-[1.02] tracking-tight text-neutral-50 sm:text-5xl lg:text-6xl">Building the<br /><em className="not-italic font-normal text-[#d9bb77]">castor value chain.</em></h2>
-            <p className="mt-7 max-w-md text-sm leading-relaxed text-neutral-400">Mirian&apos;s agricultural focus extends from castor bean production and farmer partnerships to local processing and stronger routes to market for African producers.</p>
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-neutral-400">Through Sôlt Africana Limited and CastorConnect Africa, this work helps link farmers, outgrower programmes, production, processing and global-market opportunities.</p>
+            <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#c9a45c]">
+              Agriculture &amp; agribusiness
+            </p>
+            <h2 className="mt-7 font-serif text-4xl font-normal leading-[1.02] tracking-tight text-neutral-50 sm:text-5xl lg:text-6xl">
+              Building the
+              <br />
+              <em className="not-italic font-normal text-[#d9bb77]">
+                castor value chain.
+              </em>
+            </h2>
+            <p className="mt-7 max-w-md text-sm leading-relaxed text-neutral-400">
+              Mirian&apos;s agricultural focus extends from castor bean
+              production and farmer partnerships to local processing and
+              stronger routes to market for African producers.
+            </p>
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-neutral-400">
+              Through Sôlt Africana Limited and CastorConnect Africa, this work
+              helps link farmers, outgrower programmes, production, processing
+              and global-market opportunities.
+            </p>
           </div>
-          <div data-reveal className={`grid grid-cols-1 divide-y divide-white/10 border-y border-white/10 sm:grid-cols-2 sm:divide-x ${reveal}`}>
-            {agricultureFocus.map(([title, text], index) => <article key={title} className="min-h-[180px] p-6 sm:p-8"><span className="text-[9px] text-[#c9a45c]">0{index + 1}</span><h3 className="mt-8 font-serif text-xl font-normal text-neutral-50">{title}</h3><p className="mt-3 text-xs leading-relaxed text-neutral-400">{text}</p></article>)}
+          <div
+            data-reveal
+            className={`grid grid-cols-1 divide-y divide-white/10 border-y border-white/10 sm:grid-cols-2 sm:divide-x ${reveal}`}
+          >
+            {agricultureFocus.map(([title, text], index) => (
+              <article key={title} className="min-h-[180px] p-6 sm:p-8">
+                <span className="text-[9px] text-[#c9a45c]">0{index + 1}</span>
+                <h3 className="mt-8 font-serif text-xl font-normal text-neutral-50">
+                  {title}
+                </h3>
+                <p className="mt-3 text-xs leading-relaxed text-neutral-400">
+                  {text}
+                </p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -473,7 +556,10 @@ export default function Home() {
               <strong className="mt-3 block text-[8px] uppercase tracking-[0.15em] text-neutral-400 sm:mt-0 sm:pt-1">
                 Director
               </strong>
-              <p className="col-start-2 mt-3 text-xs leading-relaxed text-neutral-400 sm:mt-1">Youth advocacy and initiatives supporting rehabilitation, development, skills and better opportunities for young people.</p>
+              <p className="col-start-2 mt-3 text-xs leading-relaxed text-neutral-400 sm:mt-1">
+                Youth advocacy and initiatives supporting rehabilitation,
+                development, skills and better opportunities for young people.
+              </p>
             </article>
             <article className="py-7 sm:py-8 sm:grid sm:grid-cols-[42px_1fr_auto] sm:items-start sm:gap-6">
               <span className="text-[9px] text-[#c9a45c] sm:pt-1">02</span>
@@ -483,12 +569,24 @@ export default function Home() {
               <strong className="mt-3 block text-[8px] uppercase tracking-[0.15em] text-neutral-400 sm:mt-0 sm:pt-1">
                 Founder &amp; Trustee
               </strong>
-              <p className="col-start-2 mt-3 text-xs leading-relaxed text-neutral-400 sm:mt-1">Advocacy for the rights, welfare and development of African women and children.</p>
+              <p className="col-start-2 mt-3 text-xs leading-relaxed text-neutral-400 sm:mt-1">
+                Advocacy for the rights, welfare and development of African
+                women and children.
+              </p>
             </article>
           </div>
         </div>
         <div className="mt-14 grid grid-cols-1 divide-y divide-white/10 border border-white/10 sm:mt-16 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-3">
-          {socialProgrammes.map(([title, text]) => <article key={title} className="min-h-[150px] p-6 sm:p-7"><h3 className="font-serif text-xl font-normal text-neutral-50">{title}</h3><p className="mt-3 text-xs leading-relaxed text-neutral-400">{text}</p></article>)}
+          {socialProgrammes.map(([title, text]) => (
+            <article key={title} className="min-h-[150px] p-6 sm:p-7">
+              <h3 className="font-serif text-xl font-normal text-neutral-50">
+                {title}
+              </h3>
+              <p className="mt-3 text-xs leading-relaxed text-neutral-400">
+                {text}
+              </p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -669,35 +767,39 @@ export default function Home() {
           </p>
         </div>
 
-        <InsightsGrid insights={insights.filter((insight) => insight.article)} />
+        <InsightsGrid
+          insights={insights.filter((insight) => insight.article)}
+        />
         <div className="mt-5 grid grid-cols-1 gap-5 sm:mt-6 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-7">
-          {insights.filter((insight) => !insight.article).map((insight, index) => (
-            <article
-              data-reveal
-              key={insight.title}
-              className={`group relative flex min-h-[200px] flex-col justify-between overflow-hidden rounded-2xl border border-neutral-900/10 bg-white/40 p-6 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#8f6b2c]/30 hover:bg-white/70 hover:shadow-xl sm:min-h-[220px] sm:p-7 ${reveal}`}
-            >
-              <div className="flex items-center justify-between gap-4">
-                <span className="text-xs tracking-[0.12em] text-neutral-900/35">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="whitespace-nowrap rounded-full border border-neutral-900/10 px-3 py-1 text-[0.65rem] uppercase tracking-[0.14em] text-neutral-900/55 sm:text-[0.7rem]">
-                  {insight.category}
-                </span>
-              </div>
-              <h3 className="mt-6 font-serif text-lg font-normal leading-snug tracking-tight text-neutral-900 sm:text-xl">
-                {insight.title}
-              </h3>
-              <div className="mt-6 flex items-center border-t border-neutral-900/10 pt-4 sm:mt-7 sm:pt-5">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 text-sm text-neutral-900/50 transition-all duration-300 group-hover:gap-3 group-hover:text-[#8f6b2c]"
-                >
-                  Coming soon <Arrow diagonal />
-                </a>
-              </div>
-            </article>
-          ))}
+          {insights
+            .filter((insight) => !insight.article)
+            .map((insight, index) => (
+              <article
+                data-reveal
+                key={insight.title}
+                className={`group relative flex min-h-[200px] flex-col justify-between overflow-hidden rounded-2xl border border-neutral-900/10 bg-white/40 p-6 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#8f6b2c]/30 hover:bg-white/70 hover:shadow-xl sm:min-h-[220px] sm:p-7 ${reveal}`}
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-xs tracking-[0.12em] text-neutral-900/35">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="whitespace-nowrap rounded-full border border-neutral-900/10 px-3 py-1 text-[0.65rem] uppercase tracking-[0.14em] text-neutral-900/55 sm:text-[0.7rem]">
+                    {insight.category}
+                  </span>
+                </div>
+                <h3 className="mt-6 font-serif text-lg font-normal leading-snug tracking-tight text-neutral-900 sm:text-xl">
+                  {insight.title}
+                </h3>
+                <div className="mt-6 flex items-center border-t border-neutral-900/10 pt-4 sm:mt-7 sm:pt-5">
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center gap-2 text-sm text-neutral-900/50 transition-all duration-300 group-hover:gap-3 group-hover:text-[#8f6b2c]"
+                  >
+                    Coming soon <Arrow diagonal />
+                  </a>
+                </div>
+              </article>
+            ))}
         </div>
       </section>
 

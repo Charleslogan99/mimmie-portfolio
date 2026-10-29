@@ -502,17 +502,76 @@ export const practiceAreas = [
   },
 ];
 
+// export const ventures = [
+//   {
+//     category: "Real estate & investment",
+//     items: [
+//       {
+//         company: "AYRI–Grace Estates Limited",
+//         role: "Director",
+//         description: "Real estate development and property investment.",
+//       },
+//       {
+//         company: "Shard Developers Limited",
+//         role: "Director",
+//         description: "Property development and investment.",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Agriculture & agribusiness",
+//     items: [
+//       {
+//         company: "Sôlt Africana Limited",
+//         role: "Director · Nigeria",
+//         description:
+//           "Agricultural business focused on castor value-chain opportunities and local and international markets.",
+//       },
+//       {
+//         company: "Sôlt Africana Farms (Pty) Limited",
+//         role: "Director · South Africa",
+//         description:
+//           "Agricultural operations supporting the wider Sôlt Africana focus.",
+//       },
+//       {
+//         company: "CastorConnect Africa Limited",
+//         role: "Director",
+//         description:
+//           "Connecting African castor farmers, production programmes and global market opportunities.",
+//       },
+//       {
+//         company: "OMANNES Agro Services",
+//         role: "Director",
+//         description:
+//           "Agricultural production and opportunities within the castor value chain.",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Media, information & development",
+//     items: [
+//       {
+//         company: "AGRICCORP Limited",
+//         role: "Director",
+//         description: "Agric Information Center and Community Radio Project.",
+//       },
+//     ],
+//   },
+// ];
+
 export const ventures = [
   {
     category: "Real estate & investment",
     items: [
       {
         company: "AYRI–Grace Estates Limited",
+        website: "https://ayrigraceestates.com",
         role: "Director",
         description: "Real estate development and property investment.",
       },
       {
         company: "Shard Developers Limited",
+        website: "https://shard.africa/",
         role: "Director",
         description: "Property development and investment.",
       },
@@ -523,6 +582,7 @@ export const ventures = [
     items: [
       {
         company: "Sôlt Africana Limited",
+        website: "https://soltafricana.com",
         role: "Director · Nigeria",
         description:
           "Agricultural business focused on castor value-chain opportunities and local and international markets.",
@@ -535,6 +595,7 @@ export const ventures = [
       },
       {
         company: "CastorConnect Africa Limited",
+        website: "https://castorconnect.africa",
         role: "Director",
         description:
           "Connecting African castor farmers, production programmes and global market opportunities.",
@@ -558,7 +619,6 @@ export const ventures = [
     ],
   },
 ];
-
 export const corporateEngagements = [
   "ECOTRA LLC · United States",
   "Basani Digital Innovations Ltd.",
